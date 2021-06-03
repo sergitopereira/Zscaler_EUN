@@ -1,0 +1,32 @@
+<style type="text/css">
+.langSelector {
+    display: none;
+    width: 200px;
+}
+.pg.red .eu_h {
+    color: #009cde;
+    }
+
+.pg.red .eu_h, .pg.red .eu_co, .pg.red .hr {
+    border-left: 3px solid #e3e3e3;
+    border-right: 3px solid #e3e3e3;
+}
+.pg.red .fo {
+    border-bottom-color: #e3e3e3;
+}
+.pg.red .eu_h {
+    border-top: 3px solid #e3e3e3;
+}
+
+.eu_co.st {
+    visibility: hidden;
+}
+.img {
+    max-height: 200px;
+    max-width: 300px;
+}
+.bh {
+    min-height: 35px;
+    max-height: 200px;
+
+</style>
