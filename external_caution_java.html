@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+div {
+    background-color: lightgrey;
+    width: 800px;
+    border: 10px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+<center><img src="superman3.png"></center>
+<font size=6 color=red><center><U><B>Access to the site has been blocked</B></U>
+</font>
+<div>
+<br>
+<font size=4>The web resource has been deemed by your Security Administrator to be unsafe or unsuitable for you to access. The resource has been blocked.
+</br>
+<p>If you believe this website has been incorrectly classified and require access for an authorized business purpose,
+please contact <a href="http://www.bbc.com">IT Service Desk </a> by <a href="mailto:test@zscaler.com"> email </a>
+stating the full URL, the block message &amp; <a href="http://www.bbc.com">Business IRM
+Manager</a> approval (attached approval email).</p>
+</font>
+</div>
+<font size=4 color=black>
+<script type="text/javascript">
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+	   console.log(query)
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+
+       return(false);
+}
+var x = location.search;
+var url = getQueryVariable("url");
+var zsq = getQueryVariable("zsq").split("zsq")[0];
+var cat = getQueryVariable("cat")
+var redirect = "https://gateway.zscalerthree.net/_sm_ctn?_sm_url="+url+ "&_sm_rid=" + zsq + "&_sm_cat=" +cat;
+
+
+//document.write("<br>Page location: "+window.location.href);
+</script>
+<br>
+<input type="button" value="Continue" onclick = "Send()" />
+<script type="text/javascript">
+    function Send() {
+        window.location.href = redirect;
+    };
+</script>
+
+<br>
+</font>
+</body>
+</html>
