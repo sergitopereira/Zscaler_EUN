@@ -1,0 +1,13 @@
+<script>
+   function getAllhref() {
+      var url = document.getElementsByClassName("eu_l")[0].innerText;
+      const element = document.getElementById('replacetxt');
+      element.innerHTML = "click here";
+      element.href="https://sitereview.zscaler.com/?url="+url;
+   }
+
+  </script>
+  <body onload="getAllhref();">
+</body>
+
+<a id='replacetxt' href="https://www.microsoft.com">Some original document content.</a>
