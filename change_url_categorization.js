@@ -1,7 +1,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', (event) => {
 //console.log(defLang);
-// the language is obtained via Zscaler variable set
+// the language is obtained via Zscaler variable set in java
 var url = document.getElementsByClassName("eu_l")[0].innerText;
 //console.log(url);
     if (defLang.includes("fr")) {
